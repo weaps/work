@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="55px" viewBox="0 0 54 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Equitable</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="55.3081909%" y1="44.6928529%" x2="55.1856877%" y2="44.568663%" id="linearGradient-1">
+            <stop stop-color="#FF8200" offset="0%"></stop>
+            <stop stop-color="#FE9400" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Canadian-Banks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Canadian-Bank" transform="translate(-161.000000, -197.000000)" fill="url(#linearGradient-1)">
+            <g id="Equitable" transform="translate(161.000000, 197.625000)">
+                <path d="M0,15.500248 L13.2494583,0 L54,0 L54,39.0059204 L41.0480576,54 L0,54 L0,15.500248 Z M12.5,21.6281832 L12.5,42.3039759 L34.5443272,42.3039759 L41.5,34.2515999 L41.5,13.3039759 L19.6154498,13.3039759 L12.5,21.6281832 Z M26.6471119,21.8825102 C28.5788838,21.8825102 30.1471119,23.3402495 30.1471119,25.1401477 C30.1471119,26.3412678 29.4378451,27.382001 28.3971119,27.9451375 L28.3971119,31.0459521 C28.3971119,31.9833248 27.6129979,32.7424898 26.6471119,32.7424898 C25.681226,32.7424898 24.8971119,31.9833248 24.8971119,31.0459521 L24.8971119,27.9451375 C23.8563787,27.382001 23.1471119,26.3412678 23.1471119,25.1401477 C23.1471119,23.3402495 24.7117759,21.8825102 26.6471119,21.8825102 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
