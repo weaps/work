@@ -1,0 +1,27 @@
+.new-year-theme {
+    background-image: url(../images/g.gif) repeat-y right center;
+}
+.new-year-theme #top-container {
+    background-image: url(../images/new-year-theme-topnav-bg.jpg)
+}
+.new-year-theme #stage {
+    position: relative;
+}
+.new-year-theme #stage .fu {
+    position: absolute;
+    top: -38px;
+    width: 80px;
+    height: 300px;
+}
+.new-year-theme #stage .fu.left {
+    left: -150px;
+}
+.new-year-theme #stage .fu.right {
+    right: -150px;
+}
+.new-year-theme .section-t {
+    padding-left: 30px;
+    height: 20px;
+    color: #e1020a;
+    background: url(../images/title-icon.png) no-repeat left;
+}
