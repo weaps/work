@@ -1,21 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>登录</title>
-<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/mobi.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../css/account.css">
+<!-- iconfont -->
+<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
 </head>
 <body style="background:#fff;">
 <div class="wrapper-main bgf loginmain">
 	<div class="ucSimpleHeader">
-			<div class="logo">
-				<a href="../index.html"></a>
-				<span class="login"></span>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo">
+					<a href="../index.html"><img src="../images/login-logo.svg" height="68"></a>
+				</div>
 			</div>
-			<div class="trigger">
-				还没有帐号，马上<a href="register.html">注册</a>
+			<div class="col-md-6 text-right register-text">
+				还没有帐号，马上
+				<a href="register2.html" class="text-danger">注册</a>
 			</div>
+		</div>
 	</div>
 </div>
 <div class="login-wrap">
@@ -23,7 +29,7 @@
 	<div class="banner-show" id="js_ban_content">
 		<!-- 左侧图片 -->
 		<div class="left_content" style="padding-top:50px;">
-				<a class="newclub_box" href="#"><img src="../images/login-img.jpg"></a>
+				<a class="newclub_box" href="#"><img src="../images/login-img.png"></a>
 		</div>
 		<!-- end -->
 
@@ -33,47 +39,36 @@
 			<div class="reg-slogan">用户登录</div>
 			<div class="reg-form" id="js-form-mobile">
 				<div class="cell">
-					<i class="ico mobile"></i>
-					<label for="js-mobile_ipt">手机号</label>
-					<input type="text" name="mobile" id="js-mobile_ipt" class="text" maxlength="11" />
+					<i class="icon iconfont icon-msnui-tel"></i>
+					<input type="text" name="mobile" id="js-mobile_ipt" class="text" maxlength="11" placeholder="用户名" />
 				</div>
 				<div class="cell">
-					<i class="ico password"></i>
-					<label for="js-mobile_pwd_ipt">密码</label>
-					<input type="password" name="passwd" id="js-mobile_pwd_ipt" class="text" />
+					<i class="icon iconfont icon-mima"></i>
+					<input type="password" name="passwd" id="js-mobile_pwd_ipt" class="text" placeholder="密码" />
 				</div>
 				<!-- !短信验证码 -->
 				<div class="cell vcode" style="margin-bottom:10px;">
-					<i class="ico number"></i>
-					<label for="js-mobile_vcode_ipt">验证码</label>
-					<input type="text" name="code" id="js-mobile_vcode_ipt" class="text" maxlength="6" />
+					<i class="icon iconfont icon-msnui-tel"></i>
+					<input type="text" name="code" id="js-mobile_vcode_ipt" class="text" maxlength="6" placeholder="验证码" />
 					<a href="javascript:;" id="js-get_mobile_vcode" class="fr yzm mt5"><img src="../images/yzm.jpeg"></a> 
 				</div>
-				<div class="auto_login" style="margin-bottom:10px;">               
-					<label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" class="jdradio">七天内自动登录 </label>
-                    <a class="fr ftx-03" href="#">忘记密码？</a>
+				<div class="text-small top-gap">
+					<div class="row">
+						<div class="col-md-7">
+							<label for="checkbox">
+								<input type="checkbox" class="jdradio">七天内自动登录 </label>
+						</div>
+						<div class="col-md-5 text-right">
+							<a class="text-muted" href="#">忘记密码？</a>
+						</div>
+					</div>             					                   
                 </div>
-				<div class="login-bottom"><a href="javascript:;" class="btn_sign_in">登录</a></div>
-				<div class="login-bottom mt20"><a href="register.html" class="btn-1 btn-block btn-lg btn-default">免费注册</a></div>
-
-				<!-- 合作帐号登录 -->
-				<div class="coagent ptb10" style="display:none;">
-                    <h5><span class="fl">使用合作网站账号登录：</span><a class="fr ftx-02" href="#">免费注册</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">新浪微博</a>
-                            <span class="line">|</span>
-                        </li>
-                        <li>
-                            <a href="#">QQ</a>
-                            <span class="line">|</span>
-                        </li>
-                        <li>
-                            <a href="#">微信</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end -->
+				<div class="login-bottom">
+					<button class="btn btn-danger btn-block" type="button">登录</button>
+				</div>
+				<div class="login-bottom">
+					<button class="btn btn-block" type="button">免费注册</button>
+				</div>
 			</div>
 			
 		</div>
@@ -86,114 +81,28 @@
 </div>
 
 <!-- footer -->
-<div id="footer" class="bgf">
-	<div class="foot">
-	  	<div class="pageFooter">
-      		<div class="right">
-        		<ul>
-			        <li class="title">购物指南</li>
-			        <li><a href="#">积分制度</a></li>
-			        <li><a href="#">会员介绍</a></li>
-			        <li><a href="#">购物流程</a></li>
-			        <li><a href="#">常见问题</a></li>
-        		</ul>
-		        <ul>
-		          	<li class="title">配送服务</li>
-		          	<li><a href="#">配送政策</a></li>
-		          	<li><a href="#">开箱验货</a></li>
-		          	<li><a href="#">配送运费</a></li>
-		          	<li><a href="#">配送范围</a></li>
-		        </ul>
-		        <ul>
-		          	<li class="title">支付方式</li>
-		          	<li><a href="#">货到付款</a></li>
-		          	<li><a href="#">在线支付</a></li>
-		          	<li><a href="#">优选卡</a></li>
-		          	<li><a href="#">发票制度</a></li>
-		        </ul>
-		        <ul>
-		          	<li class="title">售后服务</li>
-		          	<li><a href="#">退款说明</a></li>
-		          	<li><a href="#">退换货流程</a></li>
-		          	<li><a href="#">退换货政策</a></li>
-		          	<li><a href="#">隐私条款</a></li>
-		        </ul>
-				<ul class="sj">
-					<li class="title">商家中心</li>
-					<li>商家入驻</li>
-					<li><a href="#">商家规则</a></li>
-				</ul>
-      		</div>
-		  	<div class="left">
-		        <ul class="f_ios">
-		          	<li><a href="#">手机客户端</a></li>
-		          	<li><span></span></li>
-		        </ul>
-		        <ul class="f_wx">
-		          	<li>官方微信</li>
-		          	<li><span></span></li>
-		        </ul>
-	      	</div>
-    	</div>
-		<div class="bottom">
-			<div class="bottom_kx">
-				<!--可信网站图片LOGO安装开始-->
-				<a href="#"><img src="../images/kxicon.jpg" border="0"></a>
-				<!--可信网站图片LOGO安装结束-->
-			</div>
-	      	<div class="siteinfo">
-				<p>
-					<span><a href="#">关于我们</a></span>
-					<span><a href="#">联系我们</a></span>
-					<span><a href="#">招聘人才</a></span>
-					<span><a href="#">友情链接</a></span>
-					<span><a href="#">供应商申请</a></span>
-				</p>
-				<p>
-					<span>京公网安备11010502026831号</span>
-					<span><a class="beian"href="#">京ICP证150325号</a></span>
-					<span>食品流通许可证SP1101131210068671(1-1)号</span>
-					<span><a class="beian"href="#">企业营业执照</a></span>
-				</p>
-				<p>
-					<span><a href="#">网络文化经营许可证京网文</a>[2014]2148-348号</span>
-					<span><a href="#">违法和不良信息举报电话：4006561155</a></span>
-					<span>Copyright © 2004-2015  绿蒂商城 版权所有</span>
-					    
-				</p>
-	      	</div>
-	    </div>
+<div class="container footer">
+	<div class="text-center text-small content">
+		<p>
+			<span><a href="#">关于我们</a></span>
+			<span><a href="#">联系我们</a></span>
+			<span><a href="#">知识产权保护</a></span>
+			<span><a href="#">著作权与商标声明</a></span>
+			<span><a href="#">法律声明</a></span>
+			<span><a href="#">服务条款</a></span>
+			<span><a href="#">隐私政策</a></span>
+		</p>
+		<p>
+			<span>版权所有：国家技术转移东部中心 新疆分中心 </span>
+			<span><a class="text-danger"href="#">新ICP备16001593号</a></span>
+			<span>Copyright © 2017</span>
+		</p>
+		<p>					
+			<span>新公网安备 65010402000660号</span>
+		</p>
     </div>
 	<!--  -->
 </div>
 <!-- footer end -->
-<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript">
-var FancyForm=function(){
-	return{
-		inputs:".reg-form input",
-		setup:function(){
-			var a=this;
-			this.inputs=$(this.inputs);
-			a.inputs.each(function(){
-				var c=$(this);
-				a.checkVal(c)
-			});
-			a.inputs.live("keyup blur",function(){
-				var c=$(this);
-				a.checkVal(c);
-			});
-		},checkVal:function(a){
-			a.val().length>0?a.parent("div").addClass("val"):a.parent("div").removeClass("val")
-		}
-	}
-}();
-
-$(document).ready(function() {
-	FancyForm.setup();
-});
-</script>
-
-
 </body>
 </html>
