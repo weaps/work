@@ -915,3 +915,27 @@ body {
     margin-bottom: 20px;
 }
 
+.index-belt-road {
+    width: 100%;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #fff; 
+}
+.index-belt-road .name {
+    margin: 0;
+}
+.index-belt-road .con {
+    width: 100%;
+    padding-top: 20px;
+}
+.index-belt-road p {
+    width: 100%;
+    overflow: hidden;
+    text-align: justify;
+    /* text-indent: 2rem; */
+    line-height: 25px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
