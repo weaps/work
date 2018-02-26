@@ -47,8 +47,11 @@ ol,
 p,
 pre,
 table,
-ul {
-    margin: 0.9375rem 0 0;
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 h1,
@@ -86,7 +89,7 @@ h6 {
 
 a {
     -webkit-text-decoration-skip: objects;
-    color: #267fd9;
+    color: #CF3529;
     text-decoration: none;
 }
 
@@ -140,25 +143,26 @@ blockquote {
     padding-left: 0.9375rem;
 }
 
-ol,
-ul {
-    padding-left: 1.875rem;
-}
-
+dl,
 dd,
 dt,
+ul,
+img,
 ol ol,
 ol ul,
 ul ol,
-ul ul {
+ul li {
     margin: 0;
+    padding: 0;
 }
 
 hr {
     border: 0;
     border-top: 1px solid #ddd;
 }
-
+img {
+    border: 0;
+}
 small,
 sub,
 sup {
@@ -205,11 +209,6 @@ abbr[title] {
 audio:not([controls]) {
     display: none;
     height: 0;
-}
-
-img {
-    border-style: none;
-    vertical-align: middle;
 }
 
 audio,
@@ -262,6 +261,21 @@ html [type=button] {
 [hidden] {
     display: none;
 }
+input::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+input:-ms-input-placeholder {
+    color: #ddd;
+}
+
+input:-moz-placeholder {
+    color: #ddd;
+}
+
+input::-moz-placeholder {
+    color: #ddd;
+}
 
 fieldset {
     border: 1px solid #ddd;
@@ -287,18 +301,9 @@ progress {
     max-width: 100%;
 }
 
-.container,
-.container-fluid,
-.container-wider {
-    -ms-flex-positive: 1;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    overflow: hidden;
-    padding: 0 0.9375rem 0.9375rem;
-}
 .container {
-    width: 980px;
+    width: 100%;
+    max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -923,7 +928,6 @@ progress {
     }
 }
 
-@media (min-width: 1200px) {
     .col-lg-1,
     .col-lg-2,
     .col-lg-3,
@@ -1091,7 +1095,6 @@ progress {
     .col-lg-offset-0 {
         margin-left: 0%;
     }
-}
 
 .clearfix:before,
 .clearfix:after,
@@ -1216,15 +1219,21 @@ progress {
     appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 0.1875rem;
+    border-radius: 0.0875rem;
     color: #333;
     cursor: pointer;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.25;
-    margin: 0.9375rem 0 0;
-    padding: 0.4125rem 0.625rem;
+    padding: 0.2125rem 1.625rem;
     text-align: center;
+}
+.btn.btn-sm {
+    padding: 0 10px;
+    border-radius: 0.0875rem;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
 }
 
 .btn:active,
@@ -1271,6 +1280,16 @@ progress {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
+}
+.btn-danger-line {
+    border-color: #CF3529;
+    color: #CF3529;
+}
+.btn-danger-line:active,
+.btn-danger-line:hover {
+    background-color: #fff;
+    border-color: #d74242;
+    color: #d74242;
 }
 
 .btn-block {
@@ -1423,11 +1442,26 @@ progress {
 }
 
 .text-primary {
-    color: #267fd9;
+    color: #4FB0FF;
 }
 
 .text-danger {
     color: #CF3529;
+}
+.text-purple {
+    color: #774FFF;
+}
+.text-green {
+    color: #05CC47;
+}
+.text-orange {
+    color: #F5A623;
+}
+.text-darkgreen {
+    color: #3DE1CD;
+}
+.text-pink {
+    color: #FF6399;
 }
 
 a.text-danger,
@@ -1439,4 +1473,75 @@ a.text-primary {
 .text-small {
     font-size: 85%;
 }
-/*# sourceMappingURL=mobi.css.map */
+
+.boxshadow {
+    box-shadow: 
+}
+
+/* topnav css style */
+
+.topNav {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+    font-size: 12px;
+    background-color: #fff;
+}
+.topNav .language .active {
+    color: #CF3529;
+    font-weight: 600;
+}
+.topNav .language a {
+    padding: 0 .2rem;
+    color: #666;
+}
+.topNav .language a:first-child {
+    padding-left: 0;
+}
+.topNav .infomation {
+    text-align: right;
+    color: #666;
+}
+.infomation .usuallyText {
+    position: relative;
+    display: inline-block;
+    padding: 0 .8rem;
+}
+.infomation .usuallyText:after {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: rgba(0, 0, 0, .1);
+}
+.infomation .usuallyText a {
+    color: #666;
+}
+.infomation .usuallyText.registerText a {
+    color: #CF3529;
+}
+.infomation .usuallyText:last-child:after {
+    display: none;
+}
+.infomation .usuallyText:last-child {
+    padding-right: 0;
+}
+
+.shadowbox {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
+}
+.text-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-whitespace {
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
