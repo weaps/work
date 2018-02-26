@@ -1290,7 +1290,7 @@
 
 <!-- 一带一路 -->
 <div class="sectionBox">
-    <div class="index-belt-road">
+    <div class="index-belt-road shadowbox">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -1305,13 +1305,71 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-7">sss</div>
+                <div class="col-lg-8 text-right">
+                    <img src="./images/map.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="footLink">
+                    <ul class="f-img-con">
+                        <li><a href="#"><img src="./img/f1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/f2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/f3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/f4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/f5.jpg" alt=""></a></li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f1.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="hd">
+                    <span class="arrow prev"><i class="icon iconfont icon-iconfontzhizuobiaozhun023126"></i></span>
+                    <span class="arrow next"><i class="icon iconfont icon-iconfontzhizuobiaozhun023127"></i></span>
+                    </div>
+                </div>
+                <div class="footText">
+                    <a href="#">关于我们</a>|
+                    <a href="#">联系我们</a>|
+                    <a href="#">知识产权保护</a>|
+                    <a href="#">著作权与商标声明</a>|
+                    <a href="#">法律声明</a>|
+                    <a href="#">服务条款</a>|
+                    <a href="#">隐私政策</a>
+                </div>
+                <div class="copy">
+                    <span>版权所有：国家技术转移东部中心 新疆分中心 新ICP备16001593号</span>
+                    <span class="beian"><i><img src="./images/beianbgs.png" alt=""></i>新公网安备 65010402000660号</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="f-contact line">
+                    <dl>
+                        <dt>电话：</dt>
+                        <dd>0991-3191135</dd>
+                        <dd>0991-3191136</dd>
+                    </dl>
+                    <dl>
+                        <dt>邮箱：</dt>
+                        <dd>xjttc-server@xjttc.org</dd>
+                    </dl>
+                    <dl>
+                        <dt>地址：</dt>
+                        <dd>中国新疆乌鲁木齐市高新北区冬融街567号高新人才大厦</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <!-- 产品图切换 -->
 <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
@@ -1424,6 +1482,19 @@
             scroll: 6,
             vis: 6,
             delayTime: 1000
+        });
+
+        //footer 
+
+        $(".footLink").slide({
+            // titCell: ".linebox",
+            mainCell: ".f-img-con",
+            autoPage: true,
+            effect: "left",
+            autoPlay: true,
+            scroll: 5,
+            vis: 5,
+            delayTime: 1500
         });
     });
 </script>

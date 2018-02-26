@@ -16,42 +16,6 @@ body {
 .header .headinfo .logo img {
     height: 68px;
 }
-
-/* .flex-cont {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-} */
-/*搜索*/
-
-/* .flex-box {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-}
-.flex-box .input {
-    width: 0%;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    height: 32px;
-}
-
-.flex-box .input input {
-    border: none;
-    width: 100%;
-    box-sizing: border-box;
-    outline: none;
-    margin: 0;
-
-} */
-
-
-
-/* ---------------- */
 .search {
     position: relative;
     width: 100%;
@@ -348,7 +312,6 @@ body {
     display: inline-block;
     width: 10px;
     height: 10px;
-    /* border-radius: 50%; */
     margin: 0 5px;
     background: rgba(255, 255, 255, .5);
 }
@@ -917,7 +880,7 @@ body {
 
 .index-belt-road {
     width: 100%;
-    padding: 30px 0;
+    padding-top: 40px;
     overflow: hidden;
     background-color: #fff; 
 }
@@ -939,3 +902,129 @@ body {
     color: #666;
 }
 
+/* footer */
+.footer {
+    width: 100%;
+    height: 205px;
+    padding: 20px 0;
+    background-color: #121212; 
+}
+.footer .footLink {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.footer .footLink .arrow {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 30px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #121212;
+    color: rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+.footer .footLink .arrow.prev {
+    left: 0;
+}
+.footer .footLink .arrow.next {
+    right: 0;
+}
+.footer .footLink .arrow:hover {
+    color: rgba(255, 255, 255, .8);
+}
+.footer .footLink .f-img-con,
+.footer .footLink .f-img-con li a {
+    display: block;
+    width: 100%;
+    height: 55px;
+}
+.footer .footLink .f-img-con li {
+    float: left;
+    width: 126px;
+    height: 55px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+.footer .footLink .f-img-con li a {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.footer .footText {
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.footer .footText a {
+    padding: 0 6px;
+    margin: 0 6px 0 3px;
+    color: #666;
+    text-decoration: none;
+}
+.footer .copy {
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.footer .copy .beian {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    padding-left: 25px;
+    margin-left: 20px;
+}
+.footer .copy .beian i {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+.footer .copy .beian i img {
+    width: 100%;
+    vertical-align: top;
+}
+.footer .line {
+    position: relative;
+    height: 165px;
+}
+.footer .line:after {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    content: "";
+    width: 1px;
+    height: 100%;
+    /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(top left, #121212, #222, #121212);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -moz-linear-gradient(top left, #121212, #222, #121212);
+    /* firefox */
+    background-image: -ms-linear-gradient(top left, #121212, #222, #121212);
+    /* IE */
+    background-image: linear-gradient(top left, #121212, #222, #121212);    
+
+}
+.footer .f-contact {
+    padding-left: 40px;
+    font-size: 14px;
+}
+.footer .f-contact dl {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.footer .f-contact dt {
+    float: left;
+}
+.footer .f-contact dd {
+    padding-left: 50px;
+    color: #4a4a4a;
+}
