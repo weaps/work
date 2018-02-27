@@ -173,10 +173,6 @@ body {
 }
 
 /* 侧边导航 */
-.sectionBox {
-    width: 100%;
-    padding-top: 15px;
-}
 .subnav {
     height: 520px;
     background: #fff;
