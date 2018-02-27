@@ -809,9 +809,6 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
-.zhuanjia-box .personalInfo .text {
-    /* margin-right: 74px; */
-}
 .zhuanjia-box .personalInfo .text .name {
     line-height: 30px;
     margin: 0;

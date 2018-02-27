@@ -1496,13 +1496,20 @@ a.text-primary {
     padding-left: 0;
 }
 .topNav .infomation {
+    height: 35px;
     text-align: right;
     color: #666;
 }
 .infomation .usuallyText {
     position: relative;
-    display: inline-block;
+    float: left;
     padding: 0 .8rem;
+}
+.infomation .usuallyText.arrow {
+    width: 84px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-sizing: border-box;
 }
 .infomation .usuallyText:after {
     position: absolute;
@@ -1525,7 +1532,46 @@ a.text-primary {
 .infomation .usuallyText:last-child {
     padding-right: 0;
 }
-
+.infomation .usuallyText.arrow em {
+    font-style: normal;
+}
+.infomation span:hover.usuallyText.arrow {
+    background-color: #fff;
+    border-left: 1px solid rgba(221, 221, 221, .5);
+    border-right: 1px solid rgba(221, 221, 221, .5);
+}
+.infomation span:hover.usuallyText.arrow:after {
+    display: none;
+}
+.infomation span:hover.usuallyText.arrow em {
+    color: #CF3529;
+}
+.infomation .usuallyText .arrowMenu {
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    /* max-width: 84px; */
+    width: 120px;
+    border: 1px solid rgba(221, 221, 221, .5);
+    border-top: 0;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 11;
+    display: none;
+}
+.infomation .usuallyText .arrowMenu ul {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: #fff;
+}
+.infomation .usuallyText .arrowMenu li {
+    padding-left: 15px;
+    line-height: 30px;
+}
+.infomation .usuallyText .arrowMenu li:hover {
+    background-color: #fafafa;
+}
 .shadowbox {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
 }
