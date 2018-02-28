@@ -1,3 +1,16 @@
+.accountContainer {
+    width: 980px;
+}
+.header {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.header .accountSearch {
+    height: 30px;
+    margin: 19px 0;
+    background: #ddd;
+}
 /* login */
 .ucSimpleHeader {
     /* height: 66px; */

@@ -3,234 +3,66 @@
 <head>
 <meta charset="utf-8">
 <title>会员中心</title>
-<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/mobi.css">
+<!-- iconfont -->
+<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
 <link rel="stylesheet" type="text/css" href="../css/account.css">
 </head>
 
 <body>
 <!-- topmenu -->
-<div class="topMenu account">
-	<div class="pW">
-		<!--  -->
-		<ul class="fl topTh">
-			<li class="d1">全城配送 99元送货到家 送至：</li>
-			<li class="d6 tShow" id="currentCityName">
-				<p class="pshort"><span class="city_title1">安庆</span><b></b><span class="outline1"></span><span class="blank1"></span></p>
-				<!-- 地区 -->
-				<div class="dd">
-					<div class="city_top"><span>请选择您的收货地区：</span><div class="off"></div></div> 
-					<div class="city_middle">
-						<ul>
-						<li><a href="#">大观区</a></li>
-						<li><a href="#">迎江区</a></li>
-						<li><a href="#">宜秀区</a></li>
-						<li><a href="#">开发区</a></li>
-						
-						</ul>
-					</div> 
-					<div class="city_bottom">
-						<div>更多地区：</div>
-						<div class="quyu">桐城市：</div>
-						<ul class="huadong">
-							<li>新渡镇</li>
-							<li>双港镇</li>
-							<li>青草镇</li>
-							<li>鲟鱼镇</li>
-							<li>龙眼街道</li>
-							<li>文昌街道</li>
-							<li>龙腾街道</li>
-						</ul>   
-						
-						<div class="quyu">枞阳县：</div>
-						<ul class="huadong">
-							<li>广东</li>
-							<li>福建</li>
-							<li>海南</li>
-							<li>广西</li>
-						</ul>   
-						
-						<div class="quyu">怀宁县：</div>
-						<ul class="huadong">
-							<li>北京</li>
-							<li>天津</li>
-							<li>河北</li>
-							<li>山东</li>
-							<li>山西</li>
-							<li>内蒙</li>
-						</ul>   
-						
-						<div class="quyu">潜山县：</div>
-						<ul class="huadong">
-							<li>湖北</li>
-							<li>江西</li>
-							<li>湖南</li>
-							<li>河南</li>
-						</ul>   
-						
-						<div class="quyu">岳西县：</div>
-						<ul class="huadong">
-							<li>辽宁</li>
-							<li>吉林</li>
-							<li>黑龙江</li>
-						</ul>   
-						
-						<div class="quyu">太湖县：</div>
-						<ul class="huadong">
-							<li>重庆</li>
-							<li>四川</li>
-							<li>云南</li>
-							<li>贵州</li>
-							<li>西藏</li>
-						</ul>   
-						
-						<div class="quyu">望江县：</div>
-						<ul class="huadong">
-							<li>陕西</li>
-							<li>甘肃</li>
-							<li>宁夏</li>
-							<li>青海</li>
-							<li>新疆</li>
-						</ul> 
-
-						<div class="quyu">宿松县：</div>
-						<ul class="huadong">
-							<li>陕西</li>
-							<li>甘肃</li>
-							<li>宁夏</li>
-							<li>青海</li>
-							<li>新疆</li>
-						</ul>   
-					</div>
+<div class="topNav">
+	<div class="container accountContainer">
+		<div class="row">
+			<div class="col-lg-5 language">
+				<a href="#" class="active">国语</a>/
+				<a href="#">ENG</a>/
+				<a href="#">русский</a>/
+				<a href="#">ئۇيغۇرچە</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="infomation pull-right">
+					<span class="usuallyText">
+						<span class="text-danger">Moolisi</span>
+						<a href="./account/login.html">退出</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">我的订单</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">联系我们</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">帮助中心</a>
+					</span>
 				</div>
-				<!-- 地区 end -->
-			</li>
-		</ul>
-
-		<!--  -->
-		<ul class="fr topTh">
-	      <li class="login-success" id="login"><a class="ftx04" href="#">moolisi</a>&nbsp;&nbsp;<a href="#">退出</a></li>	      
-	      <li class="myOrder"><a name="sfbest_hp_hp_head_OrderList" class="trackref" href="#" rel="nofollow">我的订单</a></li>	      
-		  <li class="menus topmenu-help">
-	        <a href="#/" class="trackref t">帮助中心</a><b></b>
-	        <span class="outline"></span>
-	        <span class="blank"></span>
-	        <div class="dd">
-	          <div><a href="#">购物指南</a></div>
-	          <div><a href="#">配送服务</a></div>
-	          <div><a href="#">支付方式</a></div>
-	          <div><a href="#">售后服务</a></div>
-	          <div><a href="#">客服邮箱</a></div>
-	          <div><a href="#">投诉与建议</a></div>
-	        </div>
-	      </li>
-		  <li class="allCat"><em class="site">网站导航</em><s></s><span class="outline"></span> <span class="blank"></span>
-	        <div class="dd">
-	          <dl>
-	            <dt class="dh1">商品分类</dt>
-	            <dd>
-	            	<a href="#">生鲜食品</a>
-	            	<a href="#">酒水饮料</a>
-	            	<a href="#">休闲食品</a>
-	            	<a href="#">饼干点心</a>
-	            	<a href="#">冲调茶饮</a>
-	            	<a href="#">粮油副食</a>
-	            	<a href="#">母婴食品</a>
-	            	<a href="#">营养保健</a>
-	            	<a href="#">美食用品</a>
-	            </dd>
-	          </dl>
-	          <dl class="line"></dl>
-	          <dl>
-	            <dt class="dh2">特色频道</dt>
-	            <dd>
-	            	<a href="#">产地直供</a>
-	            	<a href="#">跨境直发</a>
-	            	<a href="#">企业专区</a>
-	            	<a href="#">红酒廊</a>
-	            	<a href="#">寰宇美食</a>
-	            	<a href="#">健康养生</a>
-	            	<a href="#">会员俱乐部</a>
-	            </dd>
-	          </dl>
-	          <dl class="line"></dl>
-	          <dl>
-	            <dt class="dh3">更多</dt>
-	            <dd>
-	            	<a href="#">客户端</a>
-	            	<a href="#">关注我们</a>
-	            	<p>客服电话：4009-111-111</p>
-	            </dd>
-	          </dl>
-	        </div>
-	      </li>
-	    </ul>
-
+			</div>
+		</div>
 	</div>
 </div>
 <!-- topmenu end -->
 
 <!-- header -->
-<div class="wrapper-main bgf account">
-<div id="header">
-	<div class="header_inner">
-		<!-- logo -->
-		<div class="logo">
-	        <a href="../index.html"></a>
-	        <span class="account"></span>
-	    </div>
-	    <!-- logo end -->
-
-	    <!-- search -->
-		<div class="search">
-			<form action="/productlist/search" id="searchForm" name="query" method="GET">
-				
-				<input type="text" class="text keyword ac_input" placeholder="魅族 PRO 5">
-				<input type="button" value="" class="submit">
-			</form>
-			<div class="search_hot">
-				<a href="#">榴莲</a>
-				<a href="#">白虾</a>
-				<a href="#">大米</a>
-				<a href="#">猕猴桃</a>
-				<a href="#">红酒</a>
-				<a href="#">牛肉</a>
-				<a href="#">五粮液</a>
-				<a href="#">大闸蟹</a>
-			</div>
-		</div>
-	    <!-- search end -->
-
-	    <!-- cart -->
-		<div class="shopingcar" id="topCart">
-	    	<s class="setCart"></s><a href="#" class="t" rel="nofollow">我的购物车</a><b id="cartNum">1</b>
-	    	<span class="outline"></span>
-	    	<span class="blank"></span>
-	    	<div id="cart_lists"><div class="btn"><a href="#" rel="nofollow">购物车 <font id="cartNum">1</font> 件 </a></div>
-				<div id="cat_form13" class="floatcar">
-					<div class="btnhover"></div>
-					<div class="btnhover"></div>
-					<div class="title">满99元包邮！</div>
-					<ul id="tEvent">
-						<li>
-							<div class="l"><a href="#"><img src="img/p56.jpg"></a></div>
-							<div class="c"><a href="#">万多福Wonderful 美国加州进口开心果(经典盐焗味) 454g</a><b>0.5kg</b></div>
-							<div class="r"><font>¥79</font> ×1 <br> <a href="#">删除</a></div>
-						</li>
-					</ul>
-					<div class="total">
-						<p style="width:210px;">共有 <font id="listCartNum"> 1 </font> 件商品
-					    	<br>总重 <font id="listCartNum">0.5</font> kg（含包装）
-						</p>
-						<p style="width:120px;text-align:right;">共计：<font>¥79</font><br>
-					  		<a href="#" class="submit5">去购物车结算</a>
-					  	</p>
-					</div>
+<div class="header">
+	<div class="container accountContainer">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="logo textLogo">
+					<a href="../index.html">
+						<div class="imgbox pull-left">
+							<img src="../images/index-logo.jpg" height="68">
+						</div>
+						<div class="logoText pull-left">
+							会员中心
+						</div>
+					</a>
 				</div>
 			</div>
-	    </div>
-	    <!-- cart end -->
+			<div class="col-lg-7">
+				<div class="accountSearch">ss</div>
+			</div>
+		</div>
 	</div>
-</div>
 </div>
 <!-- header end -->
 
