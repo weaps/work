@@ -620,7 +620,6 @@ progress {
     display: block;
     font-size: 1rem;
     line-height: 1.25;
-    margin: 0.9375rem 0 0;
     padding: 0.3125rem;
     width: 100%;
 }
@@ -634,7 +633,7 @@ progress {
 .form [type=url]:focus,
 .form select:focus,
 .form textarea:focus {
-    border-color: #267fd9;
+    border-color: #bbb;
     outline: 0;
 }
 
@@ -652,7 +651,6 @@ progress {
         border-radius: 0.1875rem;
         color: #333;
         display: block;
-        font-size: 1rem;
         line-height: 1.25;
         margin: 0.9375rem 0 0;
         padding: 0.3125rem;
