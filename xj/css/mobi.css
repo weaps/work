@@ -584,6 +584,16 @@ progress {
     display: block;
     width: 100%;
 }
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
 
 .form {
     margin: 0;
