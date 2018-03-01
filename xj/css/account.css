@@ -224,7 +224,8 @@ body {
 }
 
 .reg-form .text,
-.register-form .register-input {
+.register-form .register-input,
+.form .input-box {
     line-height: 24px;
     font-size: 14px;
     font-weight: bold;
@@ -240,7 +241,8 @@ body {
 }
 
 .reg-form .text:focus,
-.register-form .register-input:focus {
+.register-form .register-input:focus,
+.form .input-box {
     outline: none;
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     border-color: #bbb;
@@ -600,7 +602,9 @@ body {
     font-size: 12px;
     color: #999
 }
-
+.account-info .info-box .safe__level .wrz {
+    padding-right: 15px;
+}
 .account-info .info-box .safe__level .low {
     margin-left: 8px;
     color: #ff5a4f
@@ -710,6 +714,14 @@ body {
     overflow: hidden;
     text-align: left;
 }
+.tb-order .img-list a {
+    color: #666;
+    text-decoration: none;
+}
+.tb-order .img-list a:hover {
+    color: #cf3529;
+    text-decoration: none;
+}
 
 .tb-order .img-list img {
     margin-right: 10px;
@@ -784,23 +796,31 @@ body {
 }
 
 .order-title-item {
+    width: 100%;
     font-size: 16px;
     border-bottom: 2px solid #E8E8E8;
     height: 44px;
 }
 
 .order-title-item .list-item {
-    padding: 12px 20px;
+    position: relative;
+    line-height: 44px;
+    padding: 0 20px;
     position: relative;
     display: inline-block;
-    height: 18px;
-    line-height: 18px;
-    bottom: -2px;
     cursor: pointer;
 }
-
-.order-title-item .active {
-    border-bottom: 2px solid #84c225;
+.order-title-item .list-item.active {
+    font-weight: 600;
+    color: #cf3529;
+}
+.order-title-item .list-item.active:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #cf3529;
 }
 
 .order-title-item .active a {
@@ -817,4 +837,453 @@ body {
     font-style: normal;
     font-weight: 400;
     margin-left: 5px;
+}
+
+.accountOderInfo {
+    width: 100%;
+}
+.accountOderInfo .num {
+    margin-top: 10px;
+}
+.accountOderInfo .icon {
+    font-size: 20px;
+}
+
+/*order list*/
+
+.order-tb {
+    width: 100%;
+    overflow: hidden;
+}
+
+.order-tb table {
+    width: 100%;
+}
+
+.order-tb thead th {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #666;
+    font-weight: 600;
+}
+
+.order-tb tbody {
+    margin-top: 20px;
+}
+
+.order-tb td {
+    background: #fff;
+}
+
+.order-tb .ordertime-cont {
+    position: relative;
+    float: left;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+.order-tb .order-detail-txt {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.order-tb .sep-row {
+    height: 20px;
+}
+
+.order-tb .sep-row td {
+    background: none;
+}
+
+.order-tb .tr-th {
+    background: #f5f5f5;
+    height: 31px;
+    line-height: 31px;
+    color: #aaa;
+    overflow: hidden
+}
+
+.order-tb .tr-th td {
+    background: #fbfbfb;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-tb .tr-th span {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 0 0;
+    _display: inline
+}
+
+.order-tb .tr-th .dealtime {
+    margin-right: 30px;
+    _margin-right: 15px;
+    font-family: verdana
+}
+
+.order-tb .tr-th .dealtime {
+    margin-right: 30px;
+    _margin-right: 15px;
+    font-family: verdana;
+    color: #333;
+}
+
+.order-tb .tr-th a {
+    color: #333
+}
+
+.order-tb .tr-th a {
+    color: #333
+}
+
+.order-tb .tr-th .order-shop {
+    width: 178px
+}
+
+.order-tb .tr-th .order-del {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    font-size: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../images/order-icon20150212.png) -23px -132px no-repeat
+}
+
+.order-tb .tr-th a:hover.order-del {
+    background-position: 0px -132px;
+}
+
+.order-tb .tr-th .gap {
+    width: 14px;
+}
+
+.order-tb .tr-th .number {
+    width: 226px;
+    font-family: verdana;
+}
+
+.order-tb .tr-th .tr-operate {
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    width: 300px;
+    height: 23px;
+    overflow: hidden
+}
+
+.order-tb .tr-bd {
+    text-align: center;
+    vertical-align: top;
+}
+
+.order-tb .tooltip {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+}
+
+.order-tb .tr-bd td {
+    padding: 14px 0;
+}
+
+.order-tb .tooltip strong,
+.order-tb .goods-item .p-msg .price {
+    font-family: verdana;
+    color: #333;
+}
+
+/*个人信息详情*/
+
+.sns-box .bd {
+    position: relative;
+    zoom: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sns-box .userset-lcol {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.sns-box .user-info-form {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sns-box .user-info-form .item,
+.password-mod-comm .form .item {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+.sns-box .user-info-form .item span.label,
+.password-mod-comm .form .item span.label {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 10px;
+    width: 100px;
+    color: #666;
+    text-align: right
+}
+
+.user-info-form .itxt {
+    height: 18px;
+    width: 150px;
+    padding: 5px 23px 5px 5px;
+    color: #333
+}
+
+.user-info-form .jdradio {
+    float: none;
+    vertical-align: -2px;
+    _vertical-align: -1px;
+    margin: 0 3px 0 0;
+    padding: 0
+}
+
+.user-info-form .birthday-info {
+    width: 600px;
+    overflow: hidden
+}
+
+.user-info-form .selt {
+    line-height: 18px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    float: none
+}
+
+.user-info-form .selt1 {
+    width: 100px
+}
+
+.user-info-form .selt2 {
+    width: 120px
+}
+
+.user-info-form .selt3 {
+    width: 150px
+}
+
+.user-info-form .selt4 {
+    width: 198px
+}
+
+.user-info-form .address .itxt1 {
+    width: 340px
+}
+
+.sns-nf {
+    line-height: 25px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px
+}
+
+.sns-nf span.label {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 10px;
+    width: 100px;
+    text-align: right
+}
+
+.pf-avatar-box {
+    display: inline-block;
+    position: relative;
+    border: 3px solid #e6e6e6;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pf-avatar-box img {
+    vertical-align: middle;
+    width: 100%
+}
+
+.pf-avatar-box a.pf-edit-avatar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #e1d7ca;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.pf-avatar-box:hover .pf-edit-avatar {
+    color: #fff;
+    display: block;
+}
+
+.formContainer {
+    padding: 20px;
+}
+.formContainer .input-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.formContainer .input-group dt {
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: normal;
+    color: #666;
+}
+.formContainer .input-group em {
+    padding-right: 4px;
+}
+.formContainer .input-group dd {
+    float: left;
+    width: 600px;
+    padding: 3px 10px;
+    overflow: hidden;
+}
+.formContainer .form .input-box {
+    width: 100%;
+    padding: 3px 10px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-color: #ddd;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.formContainer .input-group .radio {
+    display: inline-block;
+    padding-right: 30px;
+    line-height: 20px;
+    padding-top: 7px;
+}
+.formContainer .input-group .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.formContainer .input-group .col-lg-1,
+.formContainer .input-group .col-lg-2,
+.formContainer .input-group .col-lg-3,
+.formContainer .input-group .col-lg-4,
+.formContainer .input-group .col-lg-5,
+.formContainer .input-group .col-lg-6,
+.formContainer .input-group .col-lg-7,
+.formContainer .input-group .col-lg-8,
+.formContainer .input-group .col-lg-9,
+.formContainer .input-group .col-lg-10,
+.formContainer .input-group .col-lg-11,
+.formContainer .input-group .col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.formContainer .input-group .tipsText,
+.formContainer .input-group .formlabel {
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.formContainer .input-group .formlabel {
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+}
+.formContainer .input-group .text {
+    padding-top: 8px;
+}
+.formContainer .input-group .id-box {
+    width: 100%;
+    height: 180px;
+    margin-top: 20px;
+}
+.formContainer .input-group .id-box .idcon {
+    width: 100%;
+    height: 90px;
+    margin-top: 20px;
+}
+.formContainer .input-group .id-box .imgbox {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 78px;
+}
+.formContainer .input-group .id-box .imgbox:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "照片样例";
+    width: 100%;
+    height: 100%;
+    line-height: 78px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+.formContainer .input-group .id-box .imgbox img {
+    width: 100%;
+    height: 78px;
+    vertical-align: top;
+}
+.formContainer .input-group .id-box .updateBtn {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 78px;
+    padding-top: 50px;
+    text-align: center;
+    border: 2px dashed rgba(221, 221, 221, .5);
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.formContainer .input-group .id-box .updateBtn:after {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    content: "+";
+    font-size: 32px;
+    color: #ddd;
+}
+.formContainer .input-group .id-box .updateBtn:hover {
+    border-color: #ccc;
+}
+input.upload-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 78px;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    z-index: 9;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 25px;
+    cursor: pointer;
 }
