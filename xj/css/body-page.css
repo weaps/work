@@ -989,8 +989,7 @@ body {
 .event-horizontal-list-new li:last-child {
     border-bottom: 0;
 }
-.event-horizontal-list-new li h3,
-.view-list2-con li h3 {
+.event-horizontal-list-new li h3 {
     margin-top: 0;
     margin-bottom: 12px;
     padding-top: 18px;
@@ -1054,7 +1053,8 @@ body {
     font-size: 14px;
     
 }
-.all-news li a:hover {
+.all-news li a:hover,
+.all-news-img li a:hover {
     color: #cf3529;
 }
 .all-news .title,
@@ -1112,7 +1112,7 @@ body {
     float: left;
     overflow: hidden;
     width: 280px;
-    margin-left: 15px;
+    margin: 0 0 30px 15px;
     padding-bottom: 5px;
     border: 1px solid #dfdede;
     background: #fff;
@@ -1122,7 +1122,15 @@ body {
     border-color: #f5f5f5;
     transition: all 0.5s ease;
 }
-.event-vertical-list-new li:first-child {
+.event-vertical-list-new li:first-child,
+.event-vertical-list-new li:nth-child(4),
+.event-vertical-list-new li:nth-child(7),
+.event-vertical-list-new li:nth-child(10),
+.event-vertical-list-new li:nth-child(13),
+.event-vertical-list-new li:nth-child(16),
+.event-vertical-list-new li:nth-child(19),
+.event-vertical-list-new li:nth-child(22),
+.event-vertical-list-new li:nth-child(25) {
     margin-left: 0;
 }
 .list2-con {
@@ -1145,14 +1153,55 @@ body {
     height: 24px;
     font-size: 12px;
 }
-.imgbox {
+.view-list2-con .imgbox {
     display: block;
     width: 100%;
+    height: 165px;
+    background: #eee;
 }
-.imgbox img {
+.view-list2-con .imgbox img {
+    display: inline-block;
     width: 100%;
+    height: 165px;
     vertical-align: top;
 }
+.view-list2-con .event-info {
+    padding: 10px 15px;
+}
 .view-list2-con li h3 {
-    padding: 0 10px;
+    padding-bottom: 10px;
+}
+.view-list2-con li h3 a {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 16px;
+}
+.view-list2-con li .info {
+    height: 40px;
+    text-align: right;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+}
+.view-list2-con li .info span {
+    display: inline-block;
+    padding-left: 10px;
+}
+.view-list2-con li .iconfont,
+.view-list-con li .iconfont {
+    margin-right: 2px;
+}
+.view-list2-con li .info .time {
+    float: left;
+    line-height: 30px;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.view-list2-con li .info .shoucang {
+    height: 16px;
+    line-height: 16px;
+    margin-top: 7px;
+}
+.view-list2-con li .btnbox {
+    width: 100%;
+    padding-top: 20px;
 }
