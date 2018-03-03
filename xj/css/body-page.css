@@ -105,9 +105,9 @@ body {
 .search .search-btn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     width: 100px;
-    height: 32px;
+    height: 33px;
     color: #fff;
     background: #cf3529;
     border: none;
@@ -1204,4 +1204,110 @@ body {
 .view-list2-con li .btnbox {
     width: 100%;
     padding-top: 20px;
+}
+
+
+/* list 内容详情页 */
+
+.poi-detail {
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed rgba(221, 221, 221, .5);
+    overflow: hidden;
+}
+.poi-detail .seller-info-head {
+    float: left;
+    width: 744px;
+    margin-right: 20px;
+}
+.poi-detail .seller-view {
+    position: relative;
+    float: right;
+    width: 384px;
+    height: 280px;
+    background: #eee;
+}
+.poi-detail .seller-view .img-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+}
+.poi-detail .seller-info-head .seller-name {
+    font-size: 26px;
+    font-weight: 500;
+    color: #222;
+}
+.poi-detail .seller-info-head .zl {
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #9b9b9b;
+}
+.poi-detail .seller-info-body {
+    padding: 20px 0;
+    overflow: hidden;
+    border-top: 1px dashed rgba(221, 221, 221, .5);
+    border-bottom: 1px dashed rgba(221, 221, 221, .5);
+}
+.poi-detail .seller-info-body .item {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.poi-detail .seller-info-body .item span {
+    float: left;
+    /* display: inline-block; */
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+}
+.seller-btnbox {
+    width: 100%;
+    height: 34px;
+    margin-top: 23px;
+}
+.seller-btnbox .btn:first-child {
+    margin-right: 40px;
+}
+
+.detail-container,
+.detail-descript .xn-ds {
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.detail-descript ol {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.detail-descript .xn-ds {
+    padding-bottom: 40px;
+}
+.detail-descript .title {
+    line-height: 40px;
+    font-size: 18px;
+    color: #cf3529;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+}
+.detail-descript dl {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.detail-descript dl dt {
+    padding-bottom: 10px;
+}
+.detail-descript dl dd {
+    font-size: 14px;
+    line-height: 30px;
 }
