@@ -745,6 +745,17 @@ a.text-primary {
 .text-small {
     font-size: 85%;
 }
+.ui-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.ui-whitespace {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /* topnav css style */
 
