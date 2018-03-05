@@ -788,6 +788,10 @@ body {
 }
 .zhuanjia-box {
     width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.index-product-box.zhuanjia .zhuanjia-box {
     height: 350px;
 }
 .zhuanjia-box li {
@@ -1103,6 +1107,10 @@ body {
 }
 
 /* list 2 */
+.view-list2-con .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
 .event-vertical-list-new {
     width: 100%;
     overflow: hidden;
@@ -1111,18 +1119,26 @@ body {
 .event-vertical-list-new li {
     float: left;
     overflow: hidden;
-    width: 280px;
-    margin: 0 0 30px 15px;
-    padding-bottom: 5px;
-    border: 1px solid #dfdede;
-    background: #fff;
-    box-sizing: border-box;
+    margin-bottom: 40px;
 }
 .event-vertical-list-new li {
     border-color: #f5f5f5;
     transition: all 0.5s ease;
 }
-.event-vertical-list-new li:first-child,
+.event-vertical-list-new li .li-con {
+    margin: 0 auto;
+    border: 1px solid rgba(221, 221, 221, .5);
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.huodong.event-vertical-list-new li {
+    width: 33.3333%;
+}
+.huodong.event-vertical-list-new li .li-con {
+    width: 274px;
+}
+/* .event-vertical-list-new li:first-child,
 .event-vertical-list-new li:nth-child(4),
 .event-vertical-list-new li:nth-child(7),
 .event-vertical-list-new li:nth-child(10),
@@ -1132,7 +1148,7 @@ body {
 .event-vertical-list-new li:nth-child(22),
 .event-vertical-list-new li:nth-child(25) {
     margin-left: 0;
-}
+} */
 .list2-con {
     padding-top: 15px;
 }
@@ -1162,7 +1178,7 @@ body {
 .view-list2-con .imgbox img {
     display: inline-block;
     width: 100%;
-    height: 165px;
+    /* height: 165px; */
     vertical-align: top;
 }
 .view-list2-con .event-info {
@@ -1310,4 +1326,53 @@ body {
 .detail-descript dl dd {
     font-size: 14px;
     line-height: 30px;
+}
+
+
+/* 专家列表页面 */
+.zhuanjia-container {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+    
+}
+
+.zhuanjia-container .zhuanjieTab {
+    height: 40px;
+    margin-bottom: 40px;
+}
+.zhuanjia-container .zhuanjieTab ul {
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+}
+.zhuanjia-container .zhuanjieTab li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    border: 1px solid rgba(221, 221, 221, .5);
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.zhuanjia-container .zhuanjieTab li.active {
+    background: #cf3529;
+    border-color: #cf3529;
+    color: #fff;
+}
+.zhuanjia-box {
+    border: 1px solid rgba(221, 221, 221, .5);
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.zutuan-zhuanjia .event-vertical-list-new li {
+    width: 25%;
+}
+.zutuan-zhuanjia .event-vertical-list-new .li-con {
+    width: 272px;
+    margin: 0 auto;
 }
