@@ -1468,3 +1468,120 @@ body {
     margin: 0;
     line-height: 72px;
 }
+
+/* 拍卖 */
+
+.sub-containerBox.paimai {
+    padding: 180px 0 40px 0;
+    background: #fff url(../images/paimai-banner.jpg) no-repeat center top;
+}
+.paimai .gonggao {
+    padding-left: 100px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 12px;
+    border-bottom: 2px solid rgba(221, 221, 221, .5);
+}
+.paimai .gonggao .title {
+    float: left;
+    margin-left: -80px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.paimai .gonggao li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 12px;
+}
+.paimai .paimai-tab {
+    height: 50px;
+    margin: 10px 0;
+}
+.paimai .paimai-tab li {
+    display: inline-block;
+    padding: 0 40px;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.paimai .paimai-tab li.active {
+    border-color: #cf3529;
+}
+.paimai .status {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.paimai .status span.statusLi {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+}
+.paimai .status span.statusLi em {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.paimai .status span.statusLi:first-child em{
+    background: #05CC47;
+}
+.paimai .status span.statusLi:nth-child(2) em {
+    background: #4FB0FF;
+}
+.paimai .status span.statusLi:nth-child(3) em {
+    background: #cf3529;
+}
+.paimai .status span.statusLi:nth-child(4) em {
+    background: #333;
+}
+.paimai .paimai-form input {
+    height: 28px;
+    width: 200px;
+}
+.paimai .paimai-form .btn {
+    height: 26px;
+}
+.paimai .table {
+    font-size: 12px;
+}
+
+.paimai .table td,
+.paimai .table th {
+    padding: 0.8rem 0.3125rem;
+    text-align: left;
+}
+.paimai .table td > a {
+    color: #333;
+}
+.sub-list-container.paimai .poi-detail .seller-info-body {
+    border-bottom: 0;
+}
+.paimai .detail-descript ol {
+    padding-left: 40px;
+    box-sizing: border-box
+}
+.paimai .detail-descript ol li {
+    line-height: 30px;
+}
+.paimai .seller-btnbox .sli {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+.paimai .seller-btnbox .sli:first-child {
+    padding-left: 0;
+}
+.paimai .seller-btnbox .sli:after {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    content: "";
+    height: 12px;
+    border-right: 1px dashed rgba(221, 221, 221, .5);
+}
+.paimai .seller-btnbox .sli:last-child:after {
+    display: none;
+}
