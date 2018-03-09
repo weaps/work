@@ -1544,12 +1544,12 @@ body {
 .paimai .paimai-form .btn {
     height: 26px;
 }
-.paimai .table {
+.paimai .table{
     font-size: 12px;
 }
 
 .paimai .table td,
-.paimai .table th {
+.paimai .table th{
     padding: 0.8rem 0.3125rem;
     text-align: left;
 }
@@ -1584,4 +1584,98 @@ body {
 }
 .paimai .seller-btnbox .sli:last-child:after {
     display: none;
+}
+
+
+/* 政策信息库 */
+
+.zcxxk-banner {
+    height: 300px;
+    background: url(../images/zcxxk-banner.jpg) center 0 no-repeat #fff;
+}
+.zcxxk-banner .linear {
+    height: 300px;
+    padding-top: 40px;
+    /* background: #7b4397; */
+    background: -webkit-linear-gradient(to bottom, transparent, #fff);
+    background: linear-gradient(to bottom, transparent, #fff);
+
+}
+.zcxxk-form {
+    position: relative;
+    display: block;
+    width: 400px;
+    padding-right: 69px;
+    margin: 0px auto;
+}
+.zcxxk-form input {
+    border-radius: 2px 0 0 2px;
+    height: 32px;
+}
+.zcxxk-form .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 32px;
+    border-radius: 0 2px 2px 0;
+}
+
+.zcxxk .shuaixuan {
+    width: 800px;
+    margin: 0 auto;
+}
+.zcxxk .shuaixuan ul {
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zcxxk .shuaixuan li {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-left: 80px;
+    font-size: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zcxxk .shuaixuan li .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 5px;
+}
+.zcxxk .shuaixuan li .con {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.zcxxk .shuaixuan li .con span {
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 10px;
+    border: 1px solid rgba(221, 221, 221, .5);
+    border-radius: 15px;
+    background: #fff;
+    margin-right: 10px;
+}
+.zcxxk .shuaixuan li .con span.active {
+    background: #cf3529;
+    border-color: #cf3529;
+    color: #fff;
+}
+.zcxxk .table {
+    font-size: 14px;
+}
+.zcxxk .table tr > td,
+.zcxxk .table tr > th {
+    padding: 5px 15px;
+}
+.zcxxk .table tr > td:first-child,
+.zcxxk .table tr > th:first-child,
+.zcxxk .table tr > td:last-child,
+.zcxxk .table tr > th:last-child {
+    text-align: center;
 }
