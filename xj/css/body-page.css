@@ -1708,11 +1708,11 @@ body {
     color: #fff;
 }
 .zcxxk .table {
-    font-size: 14px;
+    font-size: 16px;
 }
 .zcxxk .table tr > td,
 .zcxxk .table tr > th {
-    padding: 5px 15px;
+    padding: 15px 15px;
 }
 .zcxxk .table tr > td:first-child,
 .zcxxk .table tr > th:first-child,
