@@ -918,7 +918,18 @@ body {
     font-size: 12px;
     color: #666;
 }
-
+.index-ad {
+    width: 1200px;
+    margin: 0 auto;
+}
+.index-ad .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.index-ad .row .col-lg-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 /* list页面代码 */
 
