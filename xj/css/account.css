@@ -405,6 +405,7 @@ body {
     width: 680px;
     margin: 0 auto;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 .register-form {
     display: block;
