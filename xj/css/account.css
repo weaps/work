@@ -327,7 +327,8 @@ body {
 .register-tab {
     width: 500px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 30px;
+    overflow: hidden;
 }
 .register-tab li {
     float: left;
