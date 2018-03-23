@@ -1518,7 +1518,7 @@ body {
 
 .zhuanjia-container .zhuanjieTab {
     height: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .zhuanjia-container .zhuanjieTab ul {
     display: block;
@@ -1877,4 +1877,41 @@ body {
 }
 .zhuanjia-box.sub-zhuanjia-box li:hover {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+}
+.sub-search {
+    width: 100%;
+    padding: 0 0 20px 0;
+    height: 60px;
+}
+.sub-search form {
+    float: right;
+    padding-right: 15px;
+    position: relative;
+}
+.sub-search form input{
+    width: 260px;
+    border: 1px solid;
+    border-color: #CECECF;
+    border-radius: 2px;
+    padding: 8px 10px;
+    background: white;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+
+}
+.sub-search form input:focus {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+.sub-search form button {
+    position: absolute;
+    right: 18px;
+    top: 1px;
+    border: 0;
+    padding: 4px 10px;
+    background: #fff;
+    color: #999;
+}
+.sub-search form button:hover {
+    background: #fff;
+    color: #666;
 }
