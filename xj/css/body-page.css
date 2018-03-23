@@ -1908,10 +1908,10 @@ body {
     top: 1px;
     border: 0;
     padding: 4px 10px;
-    background: #fff;
+    background: transparent;
     color: #999;
 }
 .sub-search form button:hover {
-    background: #fff;
+    background: transparent;
     color: #666;
 }
