@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zswap</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/mui.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<header class="mui-bar mui-text-center">
+	<h1 class="logo"><img src="images/logo.png"></h1>
+</header>
+<div class="mui-content zs-news-list-index">
+	
+	<!-- nav -->
+	<nav class="nav">
+		<ul>
+			<li class="mui-table-view-cell">
+				<a href="column.html">
+					<span class="icon"><img src="images/icon-news.png"></span>
+					<p class="mui-h4 line-30">新闻</p>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="list.html">
+					<span class="icon"><img src="images/icon-gl.png"></span>
+					<p class="mui-h4 line-30">攻略</p>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="article.html">
+					<span class="icon"><img src="images/icon-cyclopedia.png"></span>
+					<p class="mui-h4 line-30">百科</p>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="article.html">
+					<span class="icon"><img src="images/icon-hot.png"></span>
+					<p class="mui-h4 line-30">热点</p>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#">
+					<span class="icon"><img src="images/icon-activity.png"></span>
+					<p class="mui-h4 line-30">活动</p>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- nav end -->
+
+	<!-- 轮播图开始 -->
+	<div id="slider" class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="img/1.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">静静看这世界</p>
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="img/2.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">幸福就是可以一起睡觉</p>
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="img/3.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">想要一间这样的木屋，静静的喝咖啡静静的喝咖啡</p>
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="img/4.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">Color of SIP CBD</p>
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="img/1.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">万字长文解读华为的创新和成功</p>
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="img/2.jpg">
+					<p class="mui-slider-title text-color-fff mui-h4 mui-text-center">幸福就是可以一起睡觉</p>
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator mui-text-center">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	<!-- 轮播图结束 -->
+
+	<!-- 单行新闻列表 -->
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell mui-media">
+			<a href="article.html">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">IBM第一季度净利润下滑13%</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">油价下跌拖累港股 恒指打响21000点保卫战</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">完达山被审计出多处生产管理缺陷 回应称是瑕疵</p>
+				</div>
+			</a>
+		</li>
+
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">苹果10亿美元投资滴滴，微信支付“引狼入室”？</p>
+				</div>
+			</a>
+		</li>
+
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">国际反假联盟总裁持有阿里股份，这是Tiffany、Gucci等退出联盟的原因？</p>
+				</div>
+			</a>
+		</li>
+
+	</ul>
+    <!-- 图文列表 P2P新闻 -->
+	<ul class="mui-table-view mt15">
+		<div class="news-list-title"><h4>P2P新闻</h4></div>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a6.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">五险一金将变四险一金 养老金真的不会减少吗</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">2小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>12</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a7.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">央行4月再放水 外围冲击A股有惊无险</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">3小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>1</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">从容全天候基金：3年对冲基金产品收益第一</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">把玫瑰花卖得死贵死贵的Roseonly又拿到了1.9 亿元融…</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">挂了新三板的e家洁今年要盈利，O2O烧钱时代终结</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">今日嗅评：从得屌丝者得天下到得中产者得天下，专车的车况和服务质量越来越重要了</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">宝洁为什么会衰败，并且永远不能复苏？</p>
+				</div>
+			</a>
+		</li>
+		<h6 class="more text-color-bbb line-40 mui-text-center">进入P2P新闻频道</h6>
+
+	</ul>
+	<!-- 图文列表 理财攻略 -->
+	<ul class="mui-table-view mt15">
+		<div class="news-list-title"><h4>理财攻略</h4></div>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a6.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">五险一金将变四险一金 养老金真的不会减少吗</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">2小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>12</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a7.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">央行4月再放水 外围冲击A股有惊无险</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">3小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>1</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">从容全天候基金：3年对冲基金产品收益第一</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">把玫瑰花卖得死贵死贵的Roseonly又拿到了1.9 亿元融…</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">挂了新三板的e家洁今年要盈利，O2O烧钱时代终结</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">今日嗅评：从得屌丝者得天下到得中产者得天下，专车的车况和服务质量越来越重要了</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">宝洁为什么会衰败，并且永远不能复苏？</p>
+				</div>
+			</a>
+		</li>
+		<h6 class="more text-color-bbb line-40 mui-text-center">进入理财攻略频道</h6>
+
+	</ul>
+	<!-- end -->
+	<!-- 图文列表 网贷百科 -->
+	<ul class="mui-table-view mt15">
+		<div class="news-list-title"><h4>网贷百科</h4></div>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a6.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">五险一金将变四险一金 养老金真的不会减少吗</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">2小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>12</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-jtop mui-pull-left" src="img/a7.jpg">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis-2 font-s-16 text-color-333">央行4月再放水 外围冲击A股有惊无险</p>
+					<p class="time-like">
+						<span class="text-color-bbb font-s-12">3小时前</span>
+						<span class="mui-pull-right"><i class="iconfont mui-h5 text-color-bbb">&#xe603;</i>1</span>
+					</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">从容全天候基金：3年对冲基金产品收益第一</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">把玫瑰花卖得死贵死贵的Roseonly又拿到了1.9 亿元融…</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">挂了新三板的e家洁今年要盈利，O2O烧钱时代终结</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">今日嗅评：从得屌丝者得天下到得中产者得天下，专车的车况和服务质量越来越重要了</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">宝洁为什么会衰败，并且永远不能复苏？</p>
+				</div>
+			</a>
+		</li>
+		<h6 class="more text-color-bbb line-40 mui-text-center">进入网贷百科频道</h6>
+
+	</ul>
+	<!-- end -->
+	<!-- 图文列表 网贷专题 -->
+	<div class="index-news-2">
+		<ul class="mui-table-view mt15">
+			<div class="news-list-title"><h4>网贷专题</h4></div>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<div class="mui-media-body">
+						<p class="mui-ellipsis font-s-16 text-color-333">从容全天候基金：3年对冲基金产品收益第一</p>					
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<div class="mui-media-body">
+						<p class="mui-ellipsis font-s-16 text-color-333">把玫瑰花卖得死贵死贵的Roseonly又拿到了1.9 亿元融…</p>					
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<div class="mui-media-body">
+						<p class="mui-ellipsis font-s-16 text-color-333">挂了新三板的e家洁今年要盈利，O2O烧钱时代终结</p>					
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<div class="mui-media-body">
+						<p class="mui-ellipsis font-s-16 text-color-333">今日嗅评：从得屌丝者得天下到得中产者得天下，专车的车况和服务质量越来越重要了</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<div class="mui-media-body">
+						<p class="mui-ellipsis font-s-16 text-color-333">宝洁为什么会衰败，并且永远不能复苏？</p>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+		<!-- end -->
+		<ul class="mui-table-view mui-grid-view">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="img/a4.jpg">
+	                <div class="mui-media-body">消费级VR年 你会爱上广告吗？</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="img/a5.jpg">
+	                <div class="mui-media-body">雾霾袭京 “霾”从何来？</div>
+	            </a>
+	        </li>
+	        <h6 class="more text-color-bbb line-40 mui-text-center bor-t mt15">进入网贷专题频道</h6>
+
+	    </ul>
+	</div>
+    <!-- 图文列表 网贷活动 -->
+	<ul class="mui-table-view mt15">
+		<div class="news-list-title"><h4>网贷活动</h4></div>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">从容全天候基金：3年对冲基金产品收益第一</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">把玫瑰花卖得死贵死贵的Roseonly又拿到了1.9 亿元融…</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">挂了新三板的e家洁今年要盈利，O2O烧钱时代终结</p>					
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">今日嗅评：从得屌丝者得天下到得中产者得天下，专车的车况和服务质量越来越重要了</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<div class="mui-media-body">
+					<p class="mui-ellipsis font-s-16 text-color-333">宝洁为什么会衰败，并且永远不能复苏？</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+    
+	<!-- end -->
+	<div class="bottom-more js-more-article" data-cur_page="1" data-detection="首页-文章流-查看更多,点击,点击">
+            点击加载更多
+    </div>
+    <!-- footer -->
+	<footer class="footer mui-text-center">
+	    <ul class="footer-nav">
+	    	<li><a href="#">首页</a></li>
+	    	<li><a href="#">新闻</a></li>
+	    	<li><a href="#">攻略</a></li>
+	    	<li><a href="#">百科</a></li>
+	    	<li><a href="#">热点</a></li>
+	    	<li><a href="#">活动</a></li>
+	    </ul>
+	    <ul class="view">
+	        <li><a href="/">手机版</a></li>
+	        <li><a href=#">桌面版</a></li>
+	    </ul>
+	    <div class="copyright-box">
+	        皖ICP备 15029234
+	    </div>
+	</footer>
+    <!-- footer end -->
+</div>
+<script type="text/javascript" src="js/mui.min.js"></script>
+</body>
+</html>
